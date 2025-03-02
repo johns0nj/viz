@@ -1,6 +1,8 @@
 import pandas as pd # 导入pandas库并简写为pd
 import matplotlib.pyplot as plt  # 导入matplotlib.pyplot模块并简写为plt
 import seaborn as sns  # 导入seaborn库并简写为sns
+
+
 # 创建创建一个包含类别、值和标准差的DataFrame数据集
 data = pd.DataFrame({'category': ["A", "B", "C", "D", "E"],                     
                      'value': [10, 15, 7, 12, 8], 'std': [1, 2, 1.5, 1.2, 2.5]})
@@ -22,3 +24,4 @@ plt.title('Mean Bar Chart with Error Bars')  # 设置图表标题
 # 设置网格线的样式、颜色和透明度
 plt.grid(axis='both', linestyle='-', color='gray', alpha=0.5)
 plt.show()
+
